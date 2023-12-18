@@ -1,0 +1,1410 @@
+<!DOCTYPE html><html lang="uk"><head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-11307856386"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11307856386');
+</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Автомобільний пилосос Vacuum Cleaner</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.inputmask.min.js"></script>
+	<script>
+		window.getCookie = function (name) {
+			var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+			if (match) return match[2];
+		}
+		$(document).ready(function () {
+			$('[name="phone"]').inputmask({
+				keepStatic: false,
+				clearIncomplete: true,
+				definitions: {
+					'z': {validator: '0'},
+					't': {validator: '3'}
+				},
+				mask: [
+					'+380 5z 999-99-99',
+					'+380 63 999-99-99',
+					'+380 66 999-99-99',
+					'+380 67 999-99-99',
+					'+380 68 999-99-99',
+					'+380 7t 999-99-99',
+					'+380 \\91 999-99-99',
+					'+380 \\93 999-99-99',
+					'+380 \\94 999-99-99',
+					'+380 \\95 999-99-99',
+					'+380 \\96 999-99-99',
+					'+380 \\97 999-99-99',
+					'+380 \\98 999-99-99',
+					'+380 \\9\\9 999-99-99'
+				]
+			}).attr('required', true);
+			// Assuming your form has an id "myForm"
+			$('form').on('submit', function (e) {
+				// Prevent the form from submitting
+				e.preventDefault();
+
+				// Check if the phone input is complete
+				var phoneInput = $(this).find('[name="phone"]');
+				if (phoneInput.inputmask("isComplete")) {
+					// If the phone input is complete, submit the form
+					$(this).children(".button").hide();
+					$('.img-loading', this).css('display', 'block');
+					this.submit();
+				} else {
+					// If the phone input is incomplete, show an error message
+					alert("Введіть повний номер телефону.");
+				}
+			});
+		});
+	</script>
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const delivery = document.getElementById('delivery2');
+
+			setTimeout(function () {
+				delivery.classList.add('is-visible');
+				// setTimeout(function() {
+				// 	delivery.classList.remove('is-visible');
+				// },15000);
+			}, 50000);
+
+			delivery.querySelector('.close').addEventListener('click', function () {
+				delivery.classList.remove('is-visible');
+			});
+		})
+	</script>
+	<style>
+		#viewing {
+			display: block;
+			position: fixed;
+			bottom: 5%;
+			left: 3%;
+			z-index: 2;
+			padding: 10px 30px 10px 20px;
+			-webkit-box-shadow: 0px 0px 15px hsl(0, 0%, 17%, 0.2);
+			box-shadow: 0px 0px 15px hsl(0, 0%, 17%, 0.2);
+			border-radius: 7px;
+			margin: 0;
+			border: 0;
+			outline: 0;
+			font-size: 100%;
+			box-sizing: border-box;
+			-webkit-text-size-adjust: 100%;
+			-webkit-font-smoothing: subpixel-antialiased;
+			transition: 1.5s ease-in-out;
+			transition-property: visibility, transform;
+			transform: translate3d(-150%, 0, 0);
+			visibility: hidden;
+		}
+
+		#viewing.is-visible {
+			transform: translate3d(0, 0, 0);
+			visibility: visible;
+		}
+
+		#viewing .close {
+			position: absolute;
+			top: 8px;
+			right: 8px;
+			display: block;
+			width: 1em;
+			height: 1em;
+			color: hsl(0, 0%, 17%);
+			font-size: 13px;
+			cursor: pointer;
+		}
+
+		#viewing .close::before,
+		#viewing .close::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0.5em;
+			height: 100%;
+			width: calc(1em / 12);
+			margin-left: calc(1em / -24);
+			background-color: currentColor;
+		}
+
+		#viewing .close::before {
+			transform: rotate(45deg);
+		}
+
+		#viewing .close::after {
+			transform: rotate(-45deg);
+		}
+
+		#viewing.light {
+			color: hsl(0, 0%, 17%);
+			background-color: hsl(0, 0%, 97%);
+		}
+
+		#viewing .layout {
+			display: flex;
+			align-items: center;
+		}
+
+		#viewing .body {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+
+		#viewing span {
+			font-weight: 700;
+			line-height: 1.4;
+			letter-spacing: .2px;
+			text-transform: uppercase;
+		}
+		#viewing p {
+			font-size: 14px;
+		}
+	</style>
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const viewing = document.getElementById('viewing');
+			const close = viewing.querySelector('.close');
+			const number = viewing.querySelector('[data-number]')
+
+			close.addEventListener('click', function () {
+				viewing.classList.remove('is-visible');
+			});
+
+			setTimeout(function () {
+				viewing.classList.add('is-visible');
+
+				number.innerHTML = randomInteger(100, 150);
+				setInterval(function () {
+					number.innerHTML = randomInteger(100, 150);
+				}, 15000);
+			}, 30000);
+
+			function randomInteger(min, max) {
+				return Math.floor(min + Math.random() * (max + 1 - min))
+			}
+		});
+	</script>
+	<style>
+		.wrapper__limited {
+			padding-bottom: 5px;
+		}
+		.limited {
+			text-align: center;
+			padding: 5px 40px;
+			line-height: 1.2em;
+			font-size: 1.3em;
+		}
+
+		.limited span {
+			background-color: #e7e7e7;
+			padding: 5px 10px;
+		}
+		#delivery2 {
+			display: block;
+			position: fixed;
+			bottom: calc(5% + 50px);
+			left: 3%;
+			z-index: 2;
+			padding: 10px 30px 10px 20px;
+			-webkit-box-shadow: 0px 0px 15px hsl(0, 0%, 17%, 0.2);
+			box-shadow: 0px 0px 15px hsl(0, 0%, 17%, 0.2);
+			border-radius: 7px;
+			margin: 0;
+			border: 0;
+			outline: 0;
+			font-size: 100%;
+			box-sizing: border-box;
+			-webkit-text-size-adjust: 100%;
+			-webkit-font-smoothing: subpixel-antialiased;
+			transition: 1.5s ease-in-out;
+			transition-property: visibility, transform;
+			transform: translate3d(-150%, 0, 0);
+			visibility: hidden;
+		}
+
+		#delivery2.is-visible {
+			transform: translate3d(0, 0, 0);
+			visibility: visible;
+		}
+
+		#delivery2 .close {
+			position: absolute;
+			top: 8px;
+			right: 8px;
+			display: block;
+			width: 1em;
+			height: 1em;
+			color: hsl(0, 0%, 17%);
+			font-size: 13px;
+			cursor: pointer;
+		}
+
+		#delivery2 .close::before,
+		#delivery2 .close::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0.5em;
+			height: 100%;
+			width: calc(1em / 12);
+			margin-left: calc(1em / -24);
+			background-color: currentColor;
+		}
+
+		#delivery2 .close::before {
+			transform: rotate(45deg);
+		}
+
+		#delivery2 .close::after {
+			transform: rotate(-45deg);
+		}
+
+		#delivery2.light {
+			color: hsl(0, 0%, 17%);
+			background-color: hsl(0, 0%, 97%);
+		}
+
+		#delivery2 .layout {
+			display: flex;
+			align-items: center;
+		}
+
+		#delivery2 .icon {
+			font-size: 45px;
+			flex-shrink: 0;
+			margin-right: 10px;
+		}
+
+		#delivery2 .icon svg {
+			width: 1.25em;
+		}
+
+		#delivery2 .body {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+
+		#delivery2 span {
+			font-weight: 700;
+			line-height: 1.4;
+			letter-spacing: .2px;
+			text-transform: uppercase;
+		}
+	</style>
+	<style>
+		.btn {
+		    box-shadow: 0 0 0 #3969C6;
+		    animation: pulse 1s infinite;
+		}
+		@keyframes pulse {
+			0% {
+				-moz-box-shadow: 0 0 0 0 #3969C6;
+				box-shadow: 0 0 0 0 #3969C6;
+			}
+			70% {
+				-moz-box-shadow: 0 0 0 10px hsl(199, 100%, 40%, 0.0);
+				box-shadow: 0 0 0 10px hsl(199, 100%, 40%, 0.0);
+			}
+			100% {
+				-moz-box-shadow: 0 0 0 0 hsl(199, 100%, 40%, 0.0);
+				box-shadow: 0 0 0 0 hsl(199, 100%, 40%, 0.0);
+			}
+		}
+	</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '363154469561101');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=363154469561101&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta name="facebook-domain-verification" content="mxruz8u9gn64sgaf7kxsdaibyu1ts1" />
+</head>
+<body>
+	<div id="delivery2" class="light">
+		<div class="close"></div>
+		<div class="layout">
+			<div class="icon">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 835 834">
+					<path d="M178.2 139c-4.4 1-7 3.6-8.1 7.9-1 3.8-4 32.7-6.6 63.6-1.6 19.4-2.6 23.3-5.9 24-1.1.3-34.7.6-74.6.8-77.2.2-74.3 0-79.7 5-1.8 1.6-2.3 3.1-2.3 7.3 0 4.6.4 5.5 3 7.8 1.7 1.4 4.7 3 6.8 3.6 2.4.6 29.3 1 75.9 1h72.1l-.4 3.7c-.8 6.4-14.4 147.3-14.4 148.9 0 1.1-2 1.4-10.2 1.4-5.7 0-16.8.3-24.8.7-14.1.6-14.6.7-17.2 3.4-2.4 2.3-2.8 3.6-2.8 8.3 0 6.7 2.6 10.3 8.5 11.6 2.2.5 12.9 1 23.8 1 18.1 0 19.7.1 19.7 1.7 0 2.8-4.3 48.7-12.5 133-4.1 42.4-7.5 78.8-7.5 80.8 0 5.4 2.3 9 7 10.9 3.4 1.3 8.4 1.6 29.8 1.6h25.9l2.2 2.4c1.3 1.4 3.2 5.7 4.2 9.8 5.5 20.8 19.4 40 38.1 52.7 6.8 4.6 20.2 10.8 27.8 12.8 10.2 2.8 35.7 2.5 46.9-.5 32-8.6 53.9-29.9 64.6-62.7 2-6 4.3-11.8 5.2-12.7 1.5-1.7 7.2-1.8 97.8-1.8h96.3l2.2 8.3c9.2 34.5 31.7 58.3 64.5 68.3 8.2 2.5 10.5 2.8 25.5 2.8 14.3.1 17.5-.2 24.3-2.2 32.5-9.4 56-32.7 65.2-64.6 1.4-5 3.3-9.8 4.1-10.7 1.4-1.6 4.5-1.8 29.4-2.1 26.4-.3 28-.4 30.7-2.4 1.5-1.1 3.3-3.2 4-4.5 1-2.1 7.9-61.4 14.8-127.3 3.4-32.5 3.4-53.8 0-70.9-9.6-48.1-39.8-88.6-82.5-110.6-25.8-13.2-44.2-16.6-97.7-17.8l-27.3-.6v-4.3c0-4.3 1.8-25 10.6-123.9 2.5-28.1 4.3-53 4.1-55.4-.6-5.5-4-9-9.8-10.2-2.4-.4-60.3-.8-128.7-.9-133.3 0-128.1-.2-132.7 5-1.5 1.6-2 3.6-2 7.5 0 6.3 2.6 9.9 8.4 11.5 2.3.6 46.5 1 121.4 1H613v2.7c0 1.6-4.5 54.1-10 116.8-5.4 62.7-11.5 132.4-13.5 155-6.6 76.8-5.9 70.6-8.5 72.7-2.1 1.7-10.2 1.8-212.2 1.8h-210l.6-4.3c.3-2.3 1.7-16.6 3.1-31.7 3-33.1 3.1-34 4.5-35.4.7-.7 14.7-1.3 42.5-1.6 40.1-.5 41.4-.6 44.2-2.6 1.5-1.2 3.4-3.7 4.2-5.7 1.7-4.7-.2-11.1-4.2-14.1-2.8-2-4.1-2.1-43.8-2.4-37.6-.3-40.9-.5-40.9-2-.1-.9 3.2-35.6 7.2-77l7.2-75.2H247c34.9 0 65.2-.4 67.3-.9 7.8-1.8 11.4-9 8.3-16.4-3.1-7.6.7-7.2-71.8-7.5-41-.2-64.8-.6-64.8-1.3 0-1.7 5.9-62.2 6.5-66.7l.6-4.2h67.2c42.8 0 68.5-.4 70.9-1 11.7-3.3 11.7-19.7 0-23-4.4-1.2-147.9-1.2-153 0zm492.1 219.7c.2.5-.9 15-2.4 32.3-1.5 17.3-2.8 33.2-2.8 35.2l-.1 3.8h-25c-20.1 0-25-.3-25-1.3 0-.8 1.4-16.5 3-35 1.7-18.6 3-34.2 3-34.7 0-1.2 48.7-1.4 49.3-.3zm37.7 3.5c21.9 4.1 45.1 17.7 63.7 37.2 24.9 26 37.5 57.8 37.2 94-.1 20.7.7 19.9-11.9 12.4-11.1-6.7-17.5-12.5-39.3-36-19.5-21-36.1-31.6-56.3-35.9-5.4-1.2-10.5-2.3-11.2-2.5-.8-.2-1.1-1.6-.7-4.1.3-2.1 1.6-17.5 3-34.3 1.4-16.8 2.8-31.1 3-31.7.4-1.3 1.3-1.2 12.5.9zm-5.2 97c13.8 5 17.2 7.7 45.2 36 16.2 16.3 28.6 28 32 30.1 6 3.7 14 7.1 20.8 8.7 2.9.8 4.5 1.8 5.1 3.3.5 1.4-1.4 21.7-5 52.7-3.2 27.8-5.8 50.8-5.8 51.2-.1.5-9.3.8-20.4.8h-20.4l-7.2-16.3c-8-18.2-10.6-22.9-17.3-31.5-9.9-12.8-28.5-24.6-46.3-29.4-11.7-3.2-36.5-3.2-48-.1-32.3 8.8-57.7 34.5-65.6 66.3-1.1 4.7-2.8 9.1-3.7 9.7-1.2 1-22.1 1.3-96.8 1.3-106.4 0-97.4.7-99.5-7.3-8.7-32.9-27.2-54.9-55.4-65.8-25.4-9.9-50.5-9.6-73.1 1-26.2 12.3-41.8 30.2-50.3 57.6-4.8 15.6-2.8 14.5-25.2 14.5H147v-2.8c0-3 5.4-60 7-73.9.5-4.9 1-11.1 1-13.8 0-7 1.7-12.3 4.3-13.7 1.7-.9 53.1-1.2 220.2-1.2 183.9-.1 218.4-.3 220.7-1.5 5-2.6 5.8-6 8.9-41.2 1.6-18.1 3.2-34.1 3.5-35.5l.6-2.5 41.2.3 41.1.3 7.3 2.7zM292 587.4c24.7 5.3 43.9 22.5 52.1 46.8 5.5 16 4.3 33.7-3.2 49.5-8.3 17.4-25.6 31.6-45 36.9-10.1 2.8-26.3 2.4-36.4-.9-11.1-3.7-19.7-9-28-17.2-24.1-24.2-27-60-7.1-87.9 15.2-21.3 42.9-32.4 67.6-27.2zm384.5 1.1c30 8 50.5 34.9 50.7 66.6.1 11.8-1.3 18-6.4 28.8-3.3 6.9-5.6 10-12.7 17-14.9 14.9-29.4 21.4-48.1 21.4-12.2.1-19.9-1.7-30.6-6.9-13.3-6.5-24.4-17.6-31.2-31-5.1-10.1-6.6-16.7-6.6-28.9 0-13.2 1.7-20.6 7.6-32.5 8.7-17.8 28.4-32.2 49.2-36 6.8-1.2 20.6-.4 28.1 1.5z"></path>
+					<path d="M267 611.5c-12.1 3.4-22.7 12.6-28.4 24.5-2.9 6.1-3.1 7.2-3.1 18 0 9.5.4 12.4 2.3 17 4.4 11.1 14.1 20.8 25.2 25.2 4.5 1.8 7.5 2.2 16.5 2.3 10.6 0 11.3-.1 18.6-3.6 34.2-16.4 34.4-64.4.3-80.6-6.6-3.1-8.7-3.6-16.7-3.9-6.2-.3-11 .1-14.7 1.1zm23.2 26.4c6.9 4.8 10 12.7 8.4 21.4-1 5.6-7.8 12.4-14 14.2-4.5 1.3-5.8 1.3-9.8.1-6.7-2-10.3-4.9-13.2-10.8-3.7-7.5-3.2-13.5 2-20.4 5.5-7.5 18.9-9.7 26.6-4.5zM647 611.6c-12 3.2-22.7 12.4-28.4 24.4-2.9 6.1-3.1 7.2-3.1 18 0 9.5.4 12.4 2.3 17 4.4 11.1 14.1 20.8 25.2 25.2 4.5 1.9 7.5 2.3 16.6 2.3 10.8 0 11.2-.1 18.7-3.8 23.1-11.4 32.1-37.6 20.9-60.5-8.9-18.3-31.6-28.1-52.2-22.6zm17.6 23.9c7.2 2.1 13.3 8.8 14.7 16.2 1.4 7.5-5.1 18.4-12.6 21.2-7.6 2.9-18.3 0-23-6.2-5.3-7-5.9-12.9-2.1-20.6 3.4-6.7 8.8-10.4 17.5-12 .3-.1 2.8.6 5.5 1.4zM60.3 333.9c-12.4.7-14.3 2-15.1 10-.5 5.9 1.1 9.1 6.1 11.8 2.9 1.6 6.2 1.8 36.1 1.5 34.7-.3 37.1-.6 39.6-5.1 2.6-5 .3-15.9-3.7-17.6-2.4-1-49.9-1.5-63-.6z"></path>
+				</svg>
+			</div>
+			<div class="body">
+				<p>
+					Діє </p>
+				<span>
+										Швидка доставка						</span>
+				<p>
+					у ваше місто </p>
+			</div>
+		</div>
+	</div>
+	<div id="viewing" class="light">
+		<div class="close"></div>
+		<div class="layout">
+			<div class="body">
+				<p>
+					Цей товар переглядають: <span data-number="">148</span>
+					осiб. </p>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="mob-menu">
+<!--			<div class="mob-menu-bg"></div>-->
+			<div class="mob-menu-content">
+				<div class="mob-menu-content-close">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M25.7071 6.29289C26.0976 6.68342 26.0976 7.31658 25.7071 7.70711L7.70711 25.7071C7.31658 26.0976 6.68342 26.0976 6.29289 25.7071C5.90237 25.3166 5.90237 24.6834 6.29289 24.2929L24.2929 6.29289C24.6834 5.90237 25.3166 5.90237 25.7071 6.29289Z" fill="#4D4D4D"></path>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.29289 6.29289C6.68342 5.90237 7.31658 5.90237 7.70711 6.29289L25.7071 24.2929C26.0976 24.6834 26.0976 25.3166 25.7071 25.7071C25.3166 26.0976 24.6834 26.0976 24.2929 25.7071L6.29289 7.70711C5.90237 7.31658 5.90237 6.68342 6.29289 6.29289Z" fill="#4D4D4D"></path>
+					</svg>
+
+				</div>
+				<ul>
+					<li><a href="#block1">Про товар</a></li>
+					<li><a href="#block2">Переваги</a></li>
+					<li><a href="#block3">Характеристики</a></li>
+					<li><a href="#block4">Відгуки</a></li>
+					<li><a href="#block5">Як замовити</a></li>
+				</ul>
+			</div>
+		</div>
+		<header class="header">
+			<div class="container">
+				<div class="phone">
+					<a href="#" class="open-popup-form"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9592 4.74078C19.1023 4.20737 19.6508 3.891 20.1842 4.03416C22.0498 4.53484 23.7509 5.51741 25.1167 6.88326C26.4826 8.24911 27.4651 9.95019 27.9658 11.8158C28.109 12.3492 27.7926 12.8976 27.2592 13.0408C26.7258 13.184 26.1773 12.8676 26.0342 12.3342C25.6244 10.8074 24.8203 9.41527 23.7025 8.29748C22.5847 7.17968 21.1926 6.37556 19.6658 5.9658C19.1324 5.82265 18.816 5.27418 18.9592 4.74078Z" fill="#4D4D4D"></path>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M17.921 8.6058C18.0628 8.07202 18.6104 7.75422 19.1442 7.89599C20.3347 8.21217 21.4205 8.83745 22.2915 9.70846C23.1625 10.5795 23.7878 11.6653 24.104 12.8558C24.2458 13.3896 23.928 13.9372 23.3942 14.079C22.8604 14.2207 22.3128 13.9029 22.171 13.3692C21.9453 12.5194 21.499 11.7444 20.8773 11.1227C20.2556 10.501 19.4806 10.0547 18.6308 9.82898C18.097 9.68721 17.7792 9.13958 17.921 8.6058Z" fill="#4D4D4D"></path>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1104 3.05809C10.5426 3.00264 10.9811 3.09077 11.3583 3.30893C11.7338 3.52611 12.028 3.86016 12.1959 4.26005L14.7047 10.1141L14.7058 10.1166C14.8357 10.4168 14.89 10.7443 14.8639 11.0703C14.8377 11.3973 14.7316 11.7128 14.5547 11.9891L14.5481 11.9994L12.4645 15.1683C13.3944 17.0862 14.9454 18.6334 16.8655 19.5587L16.8695 19.5559L19.9921 17.4701C20.2692 17.283 20.589 17.1688 20.922 17.1381C21.255 17.1074 21.5903 17.1613 21.8969 17.2946L21.9007 17.2963L27.7404 19.8043C28.1401 19.9722 28.474 20.2663 28.6911 20.6417C28.9092 21.0189 28.9973 21.4574 28.9419 21.8896C28.7256 23.5779 27.9015 25.1296 26.6238 26.2543C25.3461 27.379 23.7024 27.9996 22.0002 28C17.2263 28 12.6477 26.1036 9.27208 22.7279C5.89642 19.3522 4 14.7739 4 9.99998C4.00038 8.29781 4.62098 6.65387 5.74566 5.37619C6.87027 4.09859 8.42217 3.27447 10.1104 3.05809ZM11.5625 15.6L10.6605 16.0317C10.5128 15.7231 10.4467 15.3818 10.4686 15.0404C10.4905 14.699 10.5996 14.3689 10.7855 14.0817L10.7894 14.0756L12.8702 10.9108L12.8683 10.9064L10.3559 5.0439C9.1534 5.2002 8.04823 5.78732 7.2469 6.69766C6.44361 7.61023 6.00033 8.78422 6 9.99998M11.5625 15.6L10.6625 16.0358C11.79 18.3642 13.6727 20.2421 16.004 21.3636L16.0095 21.3663C16.3234 21.5149 16.6706 21.5792 17.0169 21.5529C17.3623 21.5267 17.695 21.4112 17.9823 21.2178L17.9845 21.2163L21.1055 19.1315L26.9554 21.6438L26.9569 21.6445C26.8006 22.847 26.2126 23.9518 25.3023 24.7531C24.3897 25.5564 23.2158 25.9997 22 26M6 9.99998C6.00006 14.2434 7.68576 18.3132 10.6863 21.3137C13.6868 24.3142 17.7566 25.9999 22 26" fill="#4D4D4D"></path>
+					</svg>
+					</a>
+				</div>
+				<div class="logo">
+					<img src="images/logo.svg" alt="logo">
+				</div>
+				<div class="burger">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 8C2.5 7.17157 3.17157 6.5 4 6.5H28C28.8284 6.5 29.5 7.17157 29.5 8C29.5 8.82843 28.8284 9.5 28 9.5H4C3.17157 9.5 2.5 8.82843 2.5 8ZM2.5 16C2.5 15.1716 3.17157 14.5 4 14.5H28C28.8284 14.5 29.5 15.1716 29.5 16C29.5 16.8284 28.8284 17.5 28 17.5H4C3.17157 17.5 2.5 16.8284 2.5 16ZM2.5 24C2.5 23.1716 3.17157 22.5 4 22.5H28C28.8284 22.5 29.5 23.1716 29.5 24C29.5 24.8284 28.8284 25.5 28 25.5H4C3.17157 25.5 2.5 24.8284 2.5 24Z" fill="#4D4D4D"></path>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="top">
+				<div class="accent-bg">
+					<div class="container">
+						<div class="top-block">
+							<h1 class="white text-center">Автомобільний пилосос<br> Vacuum Cleaner</h1>
+							<p class="white text-center">Прибирання ще ніколи не було таким легким</p>
+						</div>
+					</div>
+				</div>
+				<div class="top-img">
+					<img src="images/top-bg.webp" alt="image">
+					<div class="top-img__sale white text-center">
+						-60%
+						<span>знижки</span>
+					</div>
+				</div>
+				<div class="top-price">
+					<div class="top-price-old">
+						<p class="small">Звичайна ціна</p>
+						<span>1200 грн.</span>
+					</div>
+					<div class="top-price-new white">
+						<p class="small">
+							Ціна зі знижкою
+						</p>
+						<span class="">480 грн.</span>
+					</div>
+				</div>
+				<div class="container">
+					<div class="small" style="margin-top: 15px; text-align: center; line-height: 1;"><b>Старт осіннього розпродажу::</b></div>
+
+					<div class="sale small">
+						 <span class="sale-before large">24.11.2023</span> до <span class="after large">27.11.2023</span>
+					</div>
+					<form action="send.php.php" class="form" method="post">
+						<div class="input">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.3327 14V12.6667C13.3327 11.9594 13.0517 11.2811 12.5516 10.781C12.0515 10.281 11.3733 10 10.666 10H5.33268C4.62544 10 3.94716 10.281 3.44706 10.781C2.94697 11.2811 2.66602 11.9594 2.66602 12.6667V14M10.666 4.66667C10.666 6.13943 9.47211 7.33333 7.99935 7.33333C6.52659 7.33333 5.33268 6.13943 5.33268 4.66667C5.33268 3.19391 6.52659 2 7.99935 2C9.47211 2 10.666 3.19391 10.666 4.66667Z" stroke="#9A9A9A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+							<input type="text" name="name" required="" placeholder="Ваше ім’я">
+						</div>
+						<div class="input">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_138_598)">
+									<path d="M14.6669 11.28V13.28C14.6677 13.4657 14.6297 13.6494 14.5553 13.8195C14.4809 13.9897 14.3718 14.1424 14.235 14.2679C14.0982 14.3934 13.9367 14.489 13.7608 14.5485C13.5849 14.6079 13.3985 14.63 13.2136 14.6133C11.1622 14.3904 9.19161 13.6894 7.46028 12.5667C5.8495 11.5431 4.48384 10.1774 3.46028 8.56665C2.3336 6.82745 1.63244 4.84731 1.41361 2.78665C1.39695 2.60229 1.41886 2.41649 1.47795 2.24107C1.53703 2.06564 1.63199 1.90444 1.75679 1.76773C1.88159 1.63102 2.03348 1.52179 2.20281 1.447C2.37213 1.37221 2.55517 1.33349 2.74028 1.33332H4.74028C5.06382 1.33013 5.37748 1.4447 5.62279 1.65567C5.8681 1.86664 6.02833 2.15961 6.07361 2.47998C6.15803 3.12003 6.31458 3.74847 6.54028 4.35332C6.62998 4.59193 6.64939 4.85126 6.59622 5.10057C6.54305 5.34988 6.41952 5.57872 6.24028 5.75998L5.39361 6.60665C6.34265 8.27568 7.72458 9.65761 9.39361 10.6067L10.2403 9.75998C10.4215 9.58074 10.6504 9.45722 10.8997 9.40405C11.149 9.35088 11.4083 9.37029 11.6469 9.45998C12.2518 9.68568 12.8802 9.84224 13.5203 9.92665C13.8441 9.97234 14.1399 10.1355 14.3513 10.385C14.5627 10.6345 14.6751 10.953 14.6669 11.28Z" stroke="#9A9A9A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_138_598">
+										<rect width="16" height="16" fill="white"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<input type="tel" name="phone" required="" placeholder="Номер телефону">
+						</div>
+						<button class="btn">Замовити зі знижкою</button>
+					</form>
+					<div class="left small">
+						Залишилось <span>5</span> акційних одиниць
+					</div>
+				</div>
+			</section>
+			<section class="block2" id="block1">
+				<div class="container">
+					<h2><span>Ефективний пристрій</span><br> для підтримки чистоти</h2>
+					<div class="block2-blocks">
+						<div class="block2-block">
+							<div class="block2-block__img">
+<!--								<img src="img/block2-1.gif" alt="gif1">-->
+								<video autoplay="" loop="" muted="" playsinline="">
+									<source src="media/block2-1.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+
+							</div>
+							<div class="block2-block__text">
+								<p><b>Висока потужність</b> 120 Вт та сила всмоктування 4500 Па забезпечує якісне очищення будь-яких забруднень.</p>
+							</div>
+						</div>
+						<div class="block2-block">
+							<div class="block2-block__img">
+<!--								<img src="img/block2-2.gif" alt="gif2">-->
+								<video autoplay="" loop="" muted="" playsinline="">
+									<source src="media/block2-2.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+							<div class="block2-block__text">
+								<p><b>Ніяких заплутаних дротів</b> – вбудований акумулятор ємністю 2000 мАг забезпечує повністю автономну роботу.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="block3" id="block2">
+				<div class="container">
+					<h2><span>&nbsp;Різні насадки</span><br> для різних потреб</h2>
+					<p class="large">Легко впораються з брудом та пилом навіть у важкодоступних місцях.</p>
+					<div class="block3-blocks">
+						<div class="block3-block">
+							<div class="block3-block-img">
+								<img src="images/block-3-1.webp" alt="img1">
+								<h4 class="white">Широка трубка пилососа</h4>
+							</div>
+							<div class="block3-block-text">
+								<p class="white">Для прибирання досить великого сміття на рівних поверхнях.</p>
+							</div>
+						</div>
+						<div class="block3-block">
+							<div class="block3-block-img">
+								<img src="images/block-3-2.webp" alt="img2">
+								<h4 class="white">Вузька насадка-подовжувач</h4>
+							</div>
+							<div class="block3-block-text">
+								<p class="white">Для очищення важкодоступних місць в салоні автомобіля.</p>
+							</div>
+						</div>
+						<div class="block3-block">
+							<div class="block3-block-img">
+								<img src="images/block-3-3.webp" alt="img3">
+								<h4 class="white">Насадка-щітка</h4>
+							</div>
+							<div class="block3-block-text">
+								<p class="white">Для очищення нерівних та гладких поверхонь, які можна подряпати.</p>
+							</div>
+						</div>
+					</div>
+					<div class="btn">
+						Замовити зі знижкою
+					</div>
+				</div>
+			</section>
+			<section class="block4">
+				<div class="container">
+					<h2><span>Компактний та легкий</span></h2>
+					<p class="large">Завдяки невеликим розмірам та компактному дизайну ви можете зберігати його в бардачку або іншому зручному для вас місці автомобіля.</p>
+					<div class="block4-imgs">
+						<img src="images/block4-1.webp" alt="img1">
+						<img src="images/block4-2.webp" alt="img2">
+					</div>
+				</div>
+			</section>
+			<section class="block4">
+				<div class="container">
+					<h2><span>Просте</span> очищення</h2>
+					<p class="large">Щоб очистити фільтр, просто вийміть його з пилозбірника, промийте водою та висушіть.</p>
+					<div class="block4-imgs">
+						<img src="images/block5-1.webp" alt="img1">
+					</div>
+					<div class="btn">
+						Замовити зі знижкою
+					</div>
+				</div>
+			</section>
+			<section class="block6">
+				<div class="container">
+					<h2><span>Прибирайте</span> не тільки<br> в автомобілі</h2>
+					<div class="block6-blocks">
+						<div class="block6-block">
+							<img src="images/block6-1.webp" alt="img1">
+							<p>М’які меблі</p>
+						</div>
+						<div class="block6-block">
+							<img src="images/block6-2.webp" alt="img2">
+							<p>Клавіатура</p>
+						</div>
+						<div class="block6-block">
+							<img src="images/block6-3.webp" alt="img3">
+							<p>Шафи та полиці</p>
+						</div>
+						<div class="block6-block">
+							<img src="images/block6-4.webp" alt="img4">
+							<p>Кухонні поверхні</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="block7" id="block3">
+				<div class="container">
+					<h2><span>Характеристики<br> та комплектація</span></h2>
+					<div class="block7-img">
+						<img src="images/block7-1.webp" alt="img1">
+					</div>
+					<div class="block7-list">
+						<p>Потужність двигуна <span>120 Вт</span></p>
+						<p>Сила всмоктування <span>4500 Па</span></p>
+						<p>Ємність акумулятора <span>2000 мАг</span></p>
+						<p>Зарядка <span>через USB</span></p>
+						<p>Тип прибирання <span>сухе</span></p>
+						<p>&nbsp;Розмір (Д х Ш х В) <span>165 х 145 х 40 мм</span></p>
+						<p>Вага <span>400 г</span></p>
+						<p>Насадки <span>подовжуюча насадка, насадка-щітка</span></p>
+
+					</div>
+					<div class="btn">
+						Замовити зі знижкою
+					</div>
+				</div>
+			</section>
+			<section class="block8" id="block4">
+				<div class="container">
+					<h2>Відгуки покупців</h2>
+					<div class="tjege">
+						<a href="#reviews">
+							<div class="stars"><b></b>4.56</div>
+						</a>
+						<span style="color: #000">
+                        відгуків: 10</span>
+					</div>
+					<div class="slider-reviews">
+						<!-- <div class="slider-reviews-item"> -->
+						<div class="review-item " style="">
+							<div class="review-text ">
+
+								<div class="name">
+									<b>Стас Сорока</b>
+									<div class="review-rating">
+										<input name="rat" type="radio" id="i1">
+										<label for="i1" class="r-box">
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+										</label>
+									</div>
+								</div>
+
+								<div class="item-doptext">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									Вже купив
+								</div>
+
+								<div class="item-text"><p>Вибір був між цим та RZTK. Взяв цей та не пожалкував. Цей пилосос - справжнє задоволення! Легкий, потужний і легко очищує салон мого автомобіля від будь-яких дрібних забруднень. Салон виглядає новішим після кожного використання.</p></div>
+
+								<div class="cont_rev_img">
+									<div class="wrap_rev_img">
+
+										<a href="img/rev/rev_1.webp" data-type="image" data-fslightbox="gallery"><img src="images/rev_1.webp" alt="image"></a>
+									</div>
+								</div>
+
+								<div class="date"><br>
+									<span><p id="rev1_date_block">21 серпня 2023</p></span>
+								</div>
+							</div>
+
+							<!-- Відповідь менеджера -->
+							<div class="item-company">
+
+								<div class="name_manager"><b></b></div>
+
+								<div class="item-doptext_manager">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									Відповідь менеджера
+								</div>
+
+								<div class="item-text">
+									<p>Станіславе, дякую Вам за відгук! раді, що ви залишилися задоволені!</p>
+								</div>
+							</div>
+							<!-- Конец -->
+						</div>
+
+						<div class="review-item " style="">
+							<div class="review-text ">
+
+								<div class="name ">
+									<b>Гуров Сергей</b>
+									<div class="review-rating">
+										<input name="rat" type="radio" id="i1">
+										<label for="i1" class="r-box">
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+										</label>
+									</div>
+								</div>
+
+								<div class="item-doptext">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									Вже купив
+								</div>
+
+								<div class="item-text"><p>Я в захваті від цього пилососа! За свої гроші просто супер. Потужності достатньо для пилу і волосся, а також дрібних крихт у моєму автомобілі. Компактний розмір і легке збирання роблять його ідеальним для подорожей.</p></div>
+								<div class="cont_rev_img">
+									<div class="wrap_rev_img">
+
+										<a href="img/rev/rev_2.webp" data-type="image" data-fslightbox="gallery"><img src="images/rev_2.webp" alt="image"></a>
+									</div>
+								</div>
+								<div class="date "><br>
+									<span><p id="rev2_date_block">20 серпня 2023</p></span>
+								</div>
+							</div>
+
+							<!-- Відповідь менеджера -->
+							<div class="item-company">
+
+								<!-- <div class="name_manager"><b>Мир Инструмента</b></div> -->
+
+								<div class="item-doptext_manager">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									Відповідь менеджера
+								</div>
+
+								<div class="item-text">
+									<p>Сергію, дякую Вам за відгук. Гарного дня!</p>
+								</div>
+							</div>
+							<!-- Конец -->
+
+						</div>
+						<div class="review-item " style="">
+							<div class="review-text ">
+
+								<div class="name "><b>Романюк</b>
+									<div class="review-rating">
+										<input name="rat" type="radio" id="i1">
+										<label for="i1" class="r-box">
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+										</label>
+									</div>
+								</div>
+
+								<div class="item-doptext">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									Вже купив
+								</div>
+
+								<div class="item-text"><p>Найкращий пилосос, який я коли-небудь мав! Висока  потужність дозволяє ефективно очищати салон автомобіля від будь-яких забруднень. Доставка просто моментальна. Заказав в понеділок, у вівторок уже на моєму відділенні. Моя рекомендація !</p></div>
+								<div class="cont_rev_img">
+									<div class="wrap_rev_img">
+										<a href="img/rev/rev_3.webp" data-type="image" data-fslightbox="gallery">
+											<img src="images/rev_3.webp" alt="image">
+										</a>
+									</div>
+								</div>
+								<div class="date "><br>
+
+									<span><p id="rev3_date_block">18 серпня 2023</p></span>
+								</div>
+
+							</div>
+
+							<!-- Відповідь менеджера -->
+							<div class="item-company">
+
+								<!-- <div class="name_manager"><b>Мир Инструмента</b></div> -->
+
+								<div class="item-doptext_manager">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									Відповідь менеджера
+								</div>
+
+								<div class="item-text">
+									<p>Раді, що ви залишилися задоволені!</p>
+								</div>
+							</div>
+							<!-- Конец -->
+
+						</div>
+
+						<div class="review-item " style="">
+							<div class="review-text ">
+
+								<div class="name "><b>Евгений </b>
+									<div class="review-rating">
+										<input name="rat" type="radio" id="i1">
+										<label for="i1" class="r-box">
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+										</label>
+									</div>
+								</div>
+
+								<div class="item-doptext">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									Вже купив
+								</div>
+
+								<div class="item-text"><p>Цей пилосос - справжній рятівник для батьків. Він швидко і легко видаляє крихти, пил та інші забруднення, які накопичуються у салоні автомобіля через дітей. Оператор ввічливо проконсультував мене який саме пилосос краще обрати. Тепер моє авто завжди чисте і охайне.</p></div>
+								<div class="cont_rev_img">
+									<div class="wrap_rev_img">
+
+										<a href="img/rev/rev_4.webp" data-type="image" data-fslightbox="gallery"><img src="images/rev_4.webp" alt="image"></a>
+									</div>
+								</div>
+								<div class="date "><br>
+
+									<span><p id="rev4_date_block">16 серпня 2023</p></span>
+								</div>
+							</div>
+
+							<!-- Відповідь менеджера -->
+							<div class="item-company">
+
+								<!-- <div class="name_manager"><b>Мир Инструмента</b></div> -->
+
+								<div class="item-doptext_manager">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									Відповідь менеджера
+								</div>
+
+								<div class="item-text">
+									<p>Дякуємо за покупку та відгук! </p>
+								</div>
+							</div>
+							<!-- Конец -->
+						</div>
+
+						<div class="review-item " style="display: none;">
+							<div class="review-text ">
+
+								<div class="name "><b>Руслана Дрон</b>
+									<div class="review-rating">
+										<input name="rat" type="radio" id="i1">
+										<label for="i1" class="r-box">
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+										</label>
+									</div>
+								</div>
+
+								<div class="item-doptext">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									Вже купив
+								</div>
+
+								<div class="item-text"><p>Щаслива, що придбала цей пилосос! Його компактний розмір дозволяє зручно зберігати його у багажнику. Коли потрібно, включила, і він видаляє будь-які забруднення в мить. Гарні оператори які допоможуть в виборі.</p></div>
+								<div class="cont_rev_img">
+									<div class="wrap_rev_img">
+
+										<a href="img/rev/rev_5.webp" data-type="image" data-fslightbox="gallery"><img src="images/rev_5.webp" alt="image"></a>
+									</div>
+								</div>
+
+
+								<div class="date "><br>
+
+									<span><p id="rev5_date_block">16 серпня 2023</p></span>
+								</div>
+							</div>
+
+							<!-- Відповідь менеджера -->
+							<div class="item-company">
+
+								<!-- <div class="name_manager"><b>Мир Инструмента</b></div> -->
+
+								<div class="item-doptext_manager">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									Відповідь менеджера
+								</div>
+
+								<div class="item-text">
+									<p>Руслана, дякую за покупку! </p>
+								</div>
+							</div>
+							<!-- Конец -->
+
+						</div>
+						<div class="review-item " style="display: none;">
+							<div class="review-text ">
+
+								<div class="name "><b>Костя Пруц</b>
+									<div class="review-rating">
+										<input name="rat" type="radio" id="i1">
+										<label for="i1" class="r-box">
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<!-- <i class="fa star fa-star"></i> -->
+										</label>
+									</div>
+								</div>
+
+								<div class="item-doptext">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									Вже купив
+								</div>
+
+								<div class="item-text"><p>Просто незамінна річ коли працюєшь в таксі. Магазин гарний, дали знижку на наступне замовлення. Легко справляється з забрудненями і заощаджує мої нерви та час. Він став незамінним помічником для підтримки чистоти у моєму автомобілі. Гроші витрачені не просто так.
+								</p></div>
+
+
+								<div class="date "><br>
+
+									<span><p id="rev6_date_block">15 серпня 2023</p></span>
+								</div>
+							</div>
+
+							<!-- Відповідь менеджера -->
+							<div class="item-company">
+
+								<!-- <div class="name_manager"><b>Мир Инструмента</b></div> -->
+
+								<div class="item-doptext_manager">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									Відповідь менеджера
+								</div>
+
+								<div class="item-text">
+									<p>Костянтине, дякую вам за відгук! Гарного вам дня!</p>
+								</div>
+							</div>
+							<!-- Конец -->
+
+						</div>
+						<div class="review-item " style="display: none;">
+							<div class="review-text ">
+
+								<div class="name "><b>Denis</b>
+									<div class="review-rating">
+										<input name="rat" type="radio" id="i1">
+										<label for="i1" class="r-box">
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+										</label>
+									</div>
+								</div>
+
+								<div class="item-doptext">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									Вже купив
+								</div>
+
+								<div class="item-text"><p>Пилосос має вражаючу потужність! Без зусиль очищує салон від пилу. Легке використання і швидке прибирання - це все, що мені потрібно.
+								</p></div>
+
+
+
+								<div class="date "><br>
+
+									<span><p id="rev7_date_block">14 серпня 2023</p></span>
+								</div>
+							</div>
+
+							<!-- Відповідь менеджера -->
+							<div class="item-company">
+
+								<!-- <div class="name_manager"><b>Мир Инструмента</b></div> -->
+
+								<div class="item-doptext_manager">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									Відповідь менеджера
+								</div>
+
+								<div class="item-text">
+									<p>раді працювати вам! </p>
+								</div>
+							</div>
+							<!-- Конец -->
+
+						</div>
+						<div class="review-item " style="display: none;">
+							<div class="review-text ">
+
+								<div class="name "><b>Петр Картунов</b>
+									<div class="review-rating">
+										<input name="rat" type="radio" id="i1">
+										<label for="i1" class="r-box">
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+										</label>
+									</div>
+								</div>
+
+								<div class="item-doptext">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									Вже купив
+								</div>
+
+								<div class="item-text"><p>Неймовірно зручний і потужний. Він точно вартує своєї ціни.
+								</p></div>
+
+								<div class="date "><br>
+
+									<span><p id="rev8_date_block">13 серпня 2023</p></span>
+								</div>
+							</div>
+
+							<!-- Відповідь менеджера -->
+							<div class="item-company">
+
+								<div class="item-doptext_manager">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									Відповідь менеджера
+								</div>
+
+								<div class="item-text">
+									<p>Петре, дякую за відгук! </p>
+								</div>
+							</div>
+							<!-- Конец -->
+
+						</div>
+						<div class="review-item " style="display: none;">
+							<div class="review-text ">
+
+								<div class="name "><b>Славик Корниенко</b>
+									<div class="review-rating">
+										<input name="rat" type="radio" id="i1">
+										<label for="i1" class="r-box">
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+											<i class="fa star fa-star" aria-hidden="true"></i>
+										</label>
+									</div>
+								</div>
+
+								<div class="item-doptext">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+									Вже купив
+								</div>
+
+								<div class="item-text"><p>Пилосос - справжнє знахідка! Має вражаючу силу. Його компактний розмір дозволяє зручно зберігати його в салоні, щоб мати завжди під рукою. Найкраща якість за свої гроші, шукав в іншим магазинах не знайшов такої гарної консультації та швидкої доставки.
+								</p>
+								</div>
+
+								<div class="date "><br>
+
+									<span><p id="rev9_date_block">11 серпня 2023</p></span>
+								</div>
+							</div>
+
+						</div>
+
+
+
+					</div>
+					<div class="btn-more-wrap">
+						<a id="btnMore" class="btn-more">Показати ще</a>
+					</div>
+
+				</div>
+			</section>
+			<section class="block9">
+				<div class="container">
+					<h2><span>Розпаковка товару</span></h2>
+					<div class="block9-video">
+						<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M30 55C43.8071 55 55 43.8071 55 30C55 16.1929 43.8071 5 30 5C16.1929 5 5 16.1929 5 30C5 43.8071 16.1929 55 30 55Z" stroke="#FDFDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M25 20L40 30L25 40V20Z" stroke="#FDFDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+
+						<video src="media/video.mp4" poster="img/video-preview.jpg"></video>
+					</div>
+				</div>
+			</section>
+			<section class="block10" id="block5">
+				<div class="container">
+					<h2>Як замовити?</h2>
+					<ul class="block10-list">
+						<li>
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.44444 6C6.07606 6 5.71327 6.15258 5.4386 6.43973C5.16249 6.72839 5 7.12901 5 7.55556V25.4444C5 25.871 5.16249 26.2716 5.4386 26.5603C5.71327 26.8474 6.07606 27 6.44444 27H23.5556C23.9239 27 24.2867 26.8474 24.5614 26.5603C24.8375 26.2716 25 25.871 25 25.4444V18.6211C25 18.0688 25.4477 17.6211 26 17.6211C26.5523 17.6211 27 18.0688 27 18.6211V25.4444C27 26.3734 26.6474 27.2729 26.0067 27.9427C25.3645 28.6141 24.4838 29 23.5556 29H6.44444C5.51621 29 4.6355 28.6141 3.99332 27.9427C3.35258 27.2729 3 26.3734 3 25.4444V7.55556C3 6.62655 3.35258 5.72714 3.99332 5.05728C4.6355 4.38591 5.51622 4 6.44444 4H12.9711C13.5234 4 13.9711 4.44772 13.9711 5C13.9711 5.55228 13.5234 6 12.9711 6H6.44444Z" fill="#3969C6"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M23.1705 2.27299C23.5559 1.909 24.1584 1.909 24.5438 2.27299L29.6866 7.13013C29.8866 7.31904 30 7.58201 30 7.85714C30 8.13227 29.8866 8.39525 29.6866 8.58416L16.8295 20.727C16.6439 20.9023 16.3982 21 16.1429 21H11C10.4477 21 10 20.5523 10 20V15.1429C10 14.8677 10.1134 14.6048 10.3134 14.4158L23.1705 2.27299ZM12 15.5739V19H15.7453L27.5436 7.85714L23.8571 4.37549L12 15.5739Z" fill="#3969C6"></path>
+							</svg>
+
+							<p>Ви залишаєте заявку на нашому сайті</p>
+						</li>
+						<li>
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9592 4.74084C19.1023 4.20743 19.6508 3.89107 20.1842 4.03422C22.0498 4.5349 23.7509 5.51747 25.1167 6.88332C26.4826 8.24917 27.4651 9.95025 27.9658 11.8158C28.109 12.3492 27.7926 12.8977 27.2592 13.0409C26.7258 13.184 26.1773 12.8677 26.0342 12.3342C25.6244 10.8075 24.8203 9.41533 23.7025 8.29754C22.5847 7.17974 21.1926 6.37562 19.6658 5.96586C19.1324 5.82271 18.816 5.27425 18.9592 4.74084Z" fill="#3969C6"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M17.921 8.60586C18.0628 8.07208 18.6104 7.75428 19.1442 7.89605C20.3347 8.21223 21.4205 8.83751 22.2915 9.70853C23.1625 10.5795 23.7878 11.6653 24.104 12.8559C24.2458 13.3896 23.928 13.9373 23.3942 14.079C22.8604 14.2208 22.3128 13.903 22.171 13.3692C21.9453 12.5195 21.499 11.7444 20.8773 11.1227C20.2556 10.501 19.4806 10.0547 18.6308 9.82904C18.097 9.68728 17.7792 9.13964 17.921 8.60586Z" fill="#3969C6"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1104 3.05815C10.5426 3.0027 10.9811 3.09084 11.3583 3.30899C11.7338 3.52617 12.028 3.86022 12.1959 4.26011L14.7047 10.1142L14.7058 10.1167C14.8357 10.4169 14.89 10.7443 14.8639 11.0704C14.8377 11.3974 14.7316 11.7129 14.5547 11.9892L14.5481 11.9995L12.4645 15.1684C13.3944 17.0863 14.9454 18.6335 16.8655 19.5587L16.8695 19.556L19.9921 17.4701C20.2692 17.283 20.589 17.1688 20.922 17.1382C21.255 17.1075 21.5903 17.1613 21.8969 17.2947L21.9007 17.2963L27.7404 19.8044C28.1401 19.9723 28.474 20.2663 28.6911 20.6417C28.9092 21.019 28.9973 21.4574 28.9419 21.8896C28.7256 23.578 27.9015 25.1297 26.6238 26.2544C25.3461 27.3791 23.7024 27.9997 22.0002 28C17.2263 28 12.6477 26.1036 9.27208 22.728C5.89642 19.3523 4 14.7739 4 10C4.00038 8.29787 4.62098 6.65394 5.74566 5.37625C6.87027 4.09865 8.42217 3.27453 10.1104 3.05815ZM11.5625 15.6L10.6605 16.0317C10.5128 15.7231 10.4467 15.3818 10.4686 15.0404C10.4905 14.699 10.5996 14.3689 10.7855 14.0817L10.7894 14.0757L12.8702 10.9108L12.8683 10.9065L10.3559 5.04396C9.1534 5.20026 8.04823 5.78739 7.2469 6.69772C6.44361 7.6103 6.00033 8.78429 6 10M11.5625 15.6L10.6625 16.0359C11.79 18.3642 13.6727 20.2422 16.004 21.3637L16.0095 21.3663C16.3234 21.515 16.6706 21.5793 17.0169 21.553C17.3623 21.5268 17.695 21.4113 17.9823 21.2178L17.9845 21.2163L21.1055 19.1316L26.9554 21.6439L26.9569 21.6446C26.8006 22.847 26.2126 23.9518 25.3023 24.7531C24.3897 25.5564 23.2158 25.9997 22 26M6 10C6.00006 14.2434 7.68576 18.3132 10.6863 21.3137C13.6868 24.3143 17.7566 26 22 26" fill="#3969C6"></path>
+							</svg>
+
+							<p>Для підтвердження замовлення з вами зв'язується менеджер</p>
+						</li>
+						<li>
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.5C1 3.94772 1.44772 3.5 2 3.5H21.0909C21.6432 3.5 22.0909 3.94772 22.0909 4.5V9.88889H26.1818C26.4477 9.88889 26.7027 9.99479 26.8903 10.1832L30.7085 14.0165C30.8952 14.2039 31 14.4577 31 14.7222V21.1111C31 21.6634 30.5523 22.1111 30 22.1111H27.8371C28.2288 22.7499 28.4545 23.5017 28.4545 24.3056C28.4545 26.6183 26.586 28.5 24.2727 28.5C21.9594 28.5 20.0909 26.6183 20.0909 24.3056C20.0909 23.5017 20.3166 22.7499 20.7083 22.1111H11.2917C11.6834 22.7499 11.9091 23.5017 11.9091 24.3056C11.9091 26.6183 10.0406 28.5 7.72727 28.5C5.41399 28.5 3.54545 26.6183 3.54545 24.3056C3.54545 23.5017 3.77119 22.7499 4.16288 22.1111H2C1.44772 22.1111 1 21.6634 1 21.1111V4.5ZM20.0909 20.1111V5.5H3V20.1111H20.0909ZM22.0909 20.1111V11.8889H25.7664L29 15.1353V20.1111H22.0909ZM7.72727 22.1111C6.52602 22.1111 5.54545 23.0899 5.54545 24.3056C5.54545 25.5213 6.52602 26.5 7.72727 26.5C8.92853 26.5 9.90909 25.5213 9.90909 24.3056C9.90909 23.0899 8.92853 22.1111 7.72727 22.1111ZM24.2727 22.1111C23.0715 22.1111 22.0909 23.0899 22.0909 24.3056C22.0909 25.5213 23.0715 26.5 24.2727 26.5C25.474 26.5 26.4545 25.5213 26.4545 24.3056C26.4545 23.0899 25.474 22.1111 24.2727 22.1111Z" fill="#3969C6"></path>
+							</svg>
+
+							<p>Доставка товару Новою Поштою протягом 1-3 робочих днів</p>
+						</li>
+						<li>
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7 7C6.73478 7 6.48043 7.10536 6.29289 7.29289C6.10536 7.48043 6 7.73478 6 8C6 8.26522 6.10536 8.51957 6.29289 8.70711C6.48043 8.89464 6.73478 9 7 9H27C27.5304 9 28.0391 9.21071 28.4142 9.58579C28.7893 9.96086 29 10.4696 29 11V25C29 25.5304 28.7893 26.0391 28.4142 26.4142C28.0391 26.7893 27.5304 27 27 27H7C6.20435 27 5.44129 26.6839 4.87868 26.1213C4.31607 25.5587 4 24.7957 4 24V8C4 7.20435 4.31607 6.44129 4.87868 5.87868C5.44129 5.31607 6.20435 5 7 5H24C24.5523 5 25 5.44772 25 6C25 6.55228 24.5523 7 24 7H7ZM6 10.8284V24C6 24.2652 6.10536 24.5196 6.29289 24.7071C6.48043 24.8946 6.73478 25 7 25H27V11H7C6.65606 11 6.3182 10.9409 6 10.8284Z" fill="#3969C6"></path>
+								<path d="M22.5 19.5C23.3284 19.5 24 18.8284 24 18C24 17.1716 23.3284 16.5 22.5 16.5C21.6716 16.5 21 17.1716 21 18C21 18.8284 21.6716 19.5 22.5 19.5Z" fill="#3969C6"></path>
+							</svg>
+
+							<p>Ви оплачуєте замовлення при отриманні</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="top">
+				<div class="accent-bg">
+					<div class="container">
+						<div class="top-block">
+							<h1 class="white text-center">Автомобільний пилосос<br> Vacuum Cleaner</h1>
+							<p class="white text-center">Прибирання ще ніколи не було таким легким</p>
+						</div>
+					</div>
+				</div>
+				<div class="top-img">
+					<img src="images/top-bg.webp" alt="image">
+					<div class="top-img__sale white text-center">
+						-60%
+						<span>знижки</span>
+					</div>
+				</div>
+				<div class="top-price">
+					<div class="top-price-old">
+						<p class="small">Звичайна ціна</p>
+						<span>1200 грн.</span>
+					</div>
+					<div class="top-price-new white">
+						<p class="small">
+							Ціна зі знижкою
+						</p>
+						<span class="">480 грн.</span>
+					</div>
+				</div>
+				<div class="container">
+					<div class="small" style="margin-top: 15px; text-align: center; line-height: 1;"><b>Старт осіннього розпродажу:</b></div>
+
+					<div class="sale small">
+						 <span class="sale-before large">24.11.2023</span> до <span class="after large">27.11.2023</span>
+					</div>
+					<form action="send.php.php" class="form" method="post">
+						<div class="input">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.3327 14V12.6667C13.3327 11.9594 13.0517 11.2811 12.5516 10.781C12.0515 10.281 11.3733 10 10.666 10H5.33268C4.62544 10 3.94716 10.281 3.44706 10.781C2.94697 11.2811 2.66602 11.9594 2.66602 12.6667V14M10.666 4.66667C10.666 6.13943 9.47211 7.33333 7.99935 7.33333C6.52659 7.33333 5.33268 6.13943 5.33268 4.66667C5.33268 3.19391 6.52659 2 7.99935 2C9.47211 2 10.666 3.19391 10.666 4.66667Z" stroke="#9A9A9A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+							<input type="text" name="name" required="" placeholder="Ваше ім’я">
+						</div>
+						<div class="input">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_138_598)">
+									<path d="M14.6669 11.28V13.28C14.6677 13.4657 14.6297 13.6494 14.5553 13.8195C14.4809 13.9897 14.3718 14.1424 14.235 14.2679C14.0982 14.3934 13.9367 14.489 13.7608 14.5485C13.5849 14.6079 13.3985 14.63 13.2136 14.6133C11.1622 14.3904 9.19161 13.6894 7.46028 12.5667C5.8495 11.5431 4.48384 10.1774 3.46028 8.56665C2.3336 6.82745 1.63244 4.84731 1.41361 2.78665C1.39695 2.60229 1.41886 2.41649 1.47795 2.24107C1.53703 2.06564 1.63199 1.90444 1.75679 1.76773C1.88159 1.63102 2.03348 1.52179 2.20281 1.447C2.37213 1.37221 2.55517 1.33349 2.74028 1.33332H4.74028C5.06382 1.33013 5.37748 1.4447 5.62279 1.65567C5.8681 1.86664 6.02833 2.15961 6.07361 2.47998C6.15803 3.12003 6.31458 3.74847 6.54028 4.35332C6.62998 4.59193 6.64939 4.85126 6.59622 5.10057C6.54305 5.34988 6.41952 5.57872 6.24028 5.75998L5.39361 6.60665C6.34265 8.27568 7.72458 9.65761 9.39361 10.6067L10.2403 9.75998C10.4215 9.58074 10.6504 9.45722 10.8997 9.40405C11.149 9.35088 11.4083 9.37029 11.6469 9.45998C12.2518 9.68568 12.8802 9.84224 13.5203 9.92665C13.8441 9.97234 14.1399 10.1355 14.3513 10.385C14.5627 10.6345 14.6751 10.953 14.6669 11.28Z" stroke="#9A9A9A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_138_598">
+										<rect width="16" height="16" fill="white"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<input type="tel" name="phone" required="" placeholder="Номер телефону">
+						</div>
+						<button class="btn">Замовити зі знижкою</button>
+					</form>
+					<div class="left small">
+						Залишилось <span>5</span> акційних одиниць
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<p class="extra-small"><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2.1875C4.84213 2.1875 2.6875 4.34213 2.6875 7C2.6875 9.65787 4.84213 11.8125 7.5 11.8125C10.1579 11.8125 12.3125 9.65787 12.3125 7C12.3125 4.34213 10.1579 2.1875 7.5 2.1875ZM1.8125 7C1.8125 3.85888 4.35888 1.3125 7.5 1.3125C10.6411 1.3125 13.1875 3.85888 13.1875 7C13.1875 10.1411 10.6411 12.6875 7.5 12.6875C4.35888 12.6875 1.8125 10.1411 1.8125 7Z" fill="#373737"></path>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M8.02179 5.3296C7.67121 5.22009 7.29505 5.22366 6.9466 5.3398C6.59816 5.45595 6.29509 5.67879 6.08033 5.97676C5.86557 6.27472 5.75 6.63271 5.75 7C5.75 7.36729 5.86557 7.72528 6.08033 8.02324C6.29509 8.32121 6.59816 8.54405 6.9466 8.6602C7.29505 8.77634 7.67121 8.77991 8.02179 8.6704C8.37238 8.56088 8.67962 8.34383 8.9 8.05C9.04498 7.8567 9.3192 7.81753 9.5125 7.9625C9.7058 8.10747 9.74497 8.3817 9.6 8.575C9.26943 9.01575 8.80857 9.34133 8.28269 9.5056C7.75681 9.66987 7.19257 9.66452 6.6699 9.49029C6.14723 9.31607 5.69263 8.98181 5.37049 8.53486C5.04835 8.08792 4.875 7.55094 4.875 7C4.875 6.44906 5.04835 5.91208 5.37049 5.46514C5.69263 5.01819 6.14723 4.68393 6.6699 4.50971C7.19257 4.33548 7.75681 4.33013 8.28269 4.4944C8.80857 4.65867 9.26943 4.98425 9.6 5.425C9.74497 5.6183 9.7058 5.89253 9.5125 6.0375C9.3192 6.18247 9.04498 6.1433 8.9 5.95C8.67962 5.65617 8.37238 5.43912 8.02179 5.3296Z" fill="#373737"></path>
+				</svg>
+					Інтернет-магазин «TehnoМаркет», 2007-2023</p>
+				<p class="extra-small">
+					<a href="#" class="open-offerta">Публічна оферта</a>
+				</p>
+			</div>
+		</footer>
+		<div class="popup popup-form">
+			<div class="popup-bg"></div>
+			<div class="popup-content">
+				<div class="popup-close">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M25.7071 6.29289C26.0976 6.68342 26.0976 7.31658 25.7071 7.70711L7.70711 25.7071C7.31658 26.0976 6.68342 26.0976 6.29289 25.7071C5.90237 25.3166 5.90237 24.6834 6.29289 24.2929L24.2929 6.29289C24.6834 5.90237 25.3166 5.90237 25.7071 6.29289Z" fill="#4D4D4D"></path>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.29289 6.29289C6.68342 5.90237 7.31658 5.90237 7.70711 6.29289L25.7071 24.2929C26.0976 24.6834 26.0976 25.3166 25.7071 25.7071C25.3166 26.0976 24.6834 26.0976 24.2929 25.7071L6.29289 7.70711C5.90237 7.31658 5.90237 6.68342 6.29289 6.29289Z" fill="#4D4D4D"></path>
+					</svg>
+				</div>
+				<h2>
+					Залиште заявку
+				</h2>
+					<div class="small" style="margin-top: 15px; text-align: center; line-height: 1;"><b>Старт осіннього розпродажу:</b></div>
+				
+				<div class="sale small">
+					 <span class="sale-before large">24.11.2023</span> до <span class="after large">27.11.2023</span>
+				</div>
+				<form action="send.php.php" class="form" method="post">
+					<div class="input">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.3327 14V12.6667C13.3327 11.9594 13.0517 11.2811 12.5516 10.781C12.0515 10.281 11.3733 10 10.666 10H5.33268C4.62544 10 3.94716 10.281 3.44706 10.781C2.94697 11.2811 2.66602 11.9594 2.66602 12.6667V14M10.666 4.66667C10.666 6.13943 9.47211 7.33333 7.99935 7.33333C6.52659 7.33333 5.33268 6.13943 5.33268 4.66667C5.33268 3.19391 6.52659 2 7.99935 2C9.47211 2 10.666 3.19391 10.666 4.66667Z" stroke="#9A9A9A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						<input type="text" name="name" required="" placeholder="Ваше ім’я">
+					</div>
+					<div class="input">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_138_598)">
+								<path d="M14.6669 11.28V13.28C14.6677 13.4657 14.6297 13.6494 14.5553 13.8195C14.4809 13.9897 14.3718 14.1424 14.235 14.2679C14.0982 14.3934 13.9367 14.489 13.7608 14.5485C13.5849 14.6079 13.3985 14.63 13.2136 14.6133C11.1622 14.3904 9.19161 13.6894 7.46028 12.5667C5.8495 11.5431 4.48384 10.1774 3.46028 8.56665C2.3336 6.82745 1.63244 4.84731 1.41361 2.78665C1.39695 2.60229 1.41886 2.41649 1.47795 2.24107C1.53703 2.06564 1.63199 1.90444 1.75679 1.76773C1.88159 1.63102 2.03348 1.52179 2.20281 1.447C2.37213 1.37221 2.55517 1.33349 2.74028 1.33332H4.74028C5.06382 1.33013 5.37748 1.4447 5.62279 1.65567C5.8681 1.86664 6.02833 2.15961 6.07361 2.47998C6.15803 3.12003 6.31458 3.74847 6.54028 4.35332C6.62998 4.59193 6.64939 4.85126 6.59622 5.10057C6.54305 5.34988 6.41952 5.57872 6.24028 5.75998L5.39361 6.60665C6.34265 8.27568 7.72458 9.65761 9.39361 10.6067L10.2403 9.75998C10.4215 9.58074 10.6504 9.45722 10.8997 9.40405C11.149 9.35088 11.4083 9.37029 11.6469 9.45998C12.2518 9.68568 12.8802 9.84224 13.5203 9.92665C13.8441 9.97234 14.1399 10.1355 14.3513 10.385C14.5627 10.6345 14.6751 10.953 14.6669 11.28Z" stroke="#9A9A9A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_138_598">
+									<rect width="16" height="16" fill="white"></rect>
+								</clipPath>
+							</defs>
+						</svg>
+						<input type="tel" name="phone" required="" placeholder="Номер телефону">
+					</div>
+					<button class="btn">Замовити зі знижкою</button>
+				</form>
+				<div class="left small">
+					Залишилось <span>5</span> акційних одиниць
+				</div>
+			</div>
+		</div>
+		<div class="popup popup-offerta">
+			<div class="popup-bg"></div>
+			<div class="popup-content">
+				<div class="popup-close">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M25.7071 6.29289C26.0976 6.68342 26.0976 7.31658 25.7071 7.70711L7.70711 25.7071C7.31658 26.0976 6.68342 26.0976 6.29289 25.7071C5.90237 25.3166 5.90237 24.6834 6.29289 24.2929L24.2929 6.29289C24.6834 5.90237 25.3166 5.90237 25.7071 6.29289Z" fill="#4D4D4D"></path>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.29289 6.29289C6.68342 5.90237 7.31658 5.90237 7.70711 6.29289L25.7071 24.2929C26.0976 24.6834 26.0976 25.3166 25.7071 25.7071C25.3166 26.0976 24.6834 26.0976 24.2929 25.7071L6.29289 7.70711C5.90237 7.31658 5.90237 6.68342 6.29289 6.29289Z" fill="#4D4D4D"></path>
+					</svg>
+				</div>
+				<h2>Публічна оферта</h2>
+				<p>1.1. Наш інтернет-магазин шанобливо ставиться до прав клієнта. Дотримується сувора конфіденційність при оформленні замовлення. Відомості надійно зберігаються та захищені від передачі.</p>
+				<p>1.2. Всі дані, що збираються на Сайті, надаються та приймаються у знеособленій формі.</p>
+				<p>1.3. Згодою на обробку даних клієнта виключно для надання послуг є розміщення замовлення на сайті.</p>
+				<p>1.4. До персональних даних належить особиста інформація про клієнта: домашня адреса; ім'я прізвище по батькові; відомості про народження; майновий, сімейний стан; особисті контакти (телефон, електронна пошта) тощо.</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		function getRandomInt() {
+			var min = 4;
+			var max = 15;
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+		let left = getRandomInt();
+
+		document.addEventListener('DOMContentLoaded', ()=>{
+			document.querySelector('.block9-video').addEventListener('click', function() {
+				var video = this.querySelector('video');
+				var svg = this.querySelector('svg');
+
+				video.controls = true;  // Добавить элементы управления к видео
+				video.play();  // Запустить воспроизведение видео
+
+				svg.style.display = 'none';  // Скрыть SVG-элемент
+			});
+			document.querySelector('.burger').addEventListener('click', function () {
+				document.querySelector('.mob-menu').classList.add('active');
+			})
+			document.querySelector('.mob-menu-content-close').addEventListener('click', function () {
+				document.querySelector('.mob-menu').classList.remove('active');
+			})
+			document.querySelectorAll('.mob-menu-content a').forEach(item => {
+				item.addEventListener('click', function (e) {
+					document.querySelector('.mob-menu').classList.remove('active');
+				})
+			})
+			// document.querySelector('.mob-menu-bg').addEventListener('click', function () {
+			// 	document.querySelector('.mob-menu').classList.remove('active');
+			// })
+			document.querySelectorAll('div.btn, .open-popup-form').forEach(item => {
+				item.addEventListener('click', (e)=>{
+					e.preventDefault()
+					document.querySelector('.popup-form').style.display = 'block';
+				})
+			})
+			document.querySelector('.popup-form .popup-close').addEventListener('click', ()=>{
+				document.querySelector('.popup-form').style.display = 'none';
+			})
+			document.querySelector('.popup-form .popup-bg').addEventListener('click', ()=>{
+				document.querySelector('.popup-form').style.display = 'none';
+			})
+
+			document.querySelectorAll('.open-offerta').forEach(item => {
+				item.addEventListener('click', (e)=>{
+					e.preventDefault()
+					document.querySelector('.popup-offerta').style.display = 'block';
+				})
+			})
+			document.querySelector('.popup-offerta .popup-close').addEventListener('click', ()=>{
+				document.querySelector('.popup-offerta').style.display = 'none';
+			})
+			document.querySelector('.popup-offerta .popup-bg').addEventListener('click', ()=>{
+				document.querySelector('.popup-offerta').style.display = 'none';
+			})
+
+
+			// Находим все ссылки с атрибутом href, начинающимся с "#"
+			const links = document.querySelectorAll('a[href^="#"]');
+
+// Добавляем обработчик клика на каждую ссылку
+			links.forEach(link => {
+				link.addEventListener('click', function(event) {
+					event.preventDefault(); // Отменяем стандартное поведение ссылки
+
+					// Получаем id блока, на который ссылается ссылка
+					const targetId = link.getAttribute('href').substring(1);
+
+					// Находим элемент с нужным id
+					const targetElement = document.getElementById(targetId);
+
+					// Если такой элемент найден, скроллим к нему плавно
+					if (targetElement) {
+						const offsetTop = targetElement.offsetTop; // Получаем расстояние от верха страницы до блока
+						window.scroll({
+							top: offsetTop, // Устанавливаем позицию скролла
+							behavior: 'smooth' // Устанавливаем плавность скролла
+						});
+					}
+				});
+			});
+			document.querySelectorAll('.left span').forEach(item => item.innerHTML = left);
+
+		})
+
+
+	</script>
+	<script type="text/javascript">
+		function zero_first_format(value) {
+			if (value < 10) {
+				value = '0' + value;
+			}
+			return value;
+		}
+
+		function date_time() {
+
+			var current_datetime = new Date();
+			current_datetime.setDate(current_datetime.getDate() - 3);
+			var day = zero_first_format(current_datetime.getDate());
+			var month = zero_first_format(current_datetime.getMonth() + 1);
+			var year = current_datetime.getFullYear();
+			return day + "." + month + "." + year;
+
+		}
+
+		function date_time2() {
+
+			var current_datetime = new Date();
+			//current_datetime.setDate(current_datetime.getDate() + 2);
+			var next_day = zero_first_format(current_datetime.getDate());
+			var month = zero_first_format(current_datetime.getMonth() + 1);
+			var year = current_datetime.getFullYear();
+			return next_day + "." + month + "." + year;
+
+		}
+
+		/* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+		// document.getElementById('current_date_block').innerHTML = date_time();
+		document.querySelectorAll('.sale-before').forEach(item => item.innerHTML = date_time());
+		// document.getElementById('current_date_block3').innerHTML = date_time();
+
+
+		/* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+		document.querySelectorAll('.after').forEach(item => item.innerHTML = date_time2());
+
+		// document.getElementById('current_date_block2').innerHTML = date_time2();
+		// document.getElementById('current_date_block4').innerHTML = date_time2();
+	</script>
+	<script>
+
+		var list = $(".review-item ");
+		var numToShow = 4;
+		var button = $("#btnMore");
+		var numInList = list.length;
+		list.hide();
+		if (numInList > numToShow) {
+			button.show();
+		}
+		list.slice(0, numToShow).show();
+
+		button.click(function () {
+			var showing = list.filter(':visible').length;
+			list.slice(showing - 1, showing + numToShow).fadeIn();
+			var nowShowing = list.filter(':visible').length;
+			if (nowShowing >= numInList) {
+				button.hide();
+			}
+		});
+	</script>
+	<script>
+		document.addEventListener('contextmenu', function(e) {
+			e.preventDefault();
+		});
+
+	</script>
+
+</body></html>
